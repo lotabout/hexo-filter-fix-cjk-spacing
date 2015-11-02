@@ -1,3 +1,33 @@
+Hexo will add extra space of continous lines with CJK characters.
+
+```
+.....中文结尾
+中文顶格...
+
+will result in
+
+.....中文结尾 中文顶格...
+             `- note the space here
+```
+
+This plugin will fix that.
+
+# Usage
+
+```bash
+$ npm install hexo-filter-auto-spacing --save
+```
+
+Note that Hexo' [marked.js](https://github.com/hexojs/hexo-renderer-marked)
+uses GitHub flavored markdown which will parse every line break in markdown
+into `<br>`. Use the following to disabled it:
+
+```js
+marked:
+  gfm: true
+  breaks: false
+```
+
 # The problem
 
 In markdown, if we write several lines continuously, it will be parsed as a
@@ -64,3 +94,5 @@ Only the following situation are dealt with:
 .....中文结尾中文顶格...
 //           `- note no space here
 ```
+
+Note that the content in code block will not be changed.
