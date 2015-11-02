@@ -18,13 +18,19 @@ This plugin will fix that.
 $ npm install hexo-filter-auto-spacing --save
 ```
 
+If you want to disable this plugin, add the following line in your
+`_config.yml`:
+
+```
+fix_cjk_spacing: false
+```
+
 Note that Hexo' [marked.js](https://github.com/hexojs/hexo-renderer-marked)
 uses GitHub flavored markdown which will parse every line break in markdown
 into `<br>`. Use the following to disabled it:
 
 ```js
 marked:
-  gfm: true
   breaks: false
 ```
 

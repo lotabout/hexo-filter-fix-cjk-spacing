@@ -1,6 +1,12 @@
 'use strict';
 
 var fix_cjk_spacing = require('./lib/fix-cjk-spacing.js');
+
+// configuration
+var enabled = hexo.config.fix_cjk_spacing;
+
 hexo.extend.filter.register('after_post_render', function(data) {
-  data.content = fix_cjk_spacing(data.content);
+  if (enabled === undefined || enabled === true) {
+    data.content = fix_cjk_spacing(data.content);
+  }
 });
