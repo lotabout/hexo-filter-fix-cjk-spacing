@@ -15,7 +15,7 @@ This plugin will fix that.
 # Usage
 
 ```bash
-$ npm install hexo-filter-auto-spacing --save
+$ npm install hexo-filter-fix-cjk-spacing --save
 ```
 
 If you want to disable this plugin, add the following line in your
