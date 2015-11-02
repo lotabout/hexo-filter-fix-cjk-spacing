@@ -1,6 +1,28 @@
 {
   "name": "hexo-filter-fix-cjk-spacing",
   "version": "0.0.1",
-  "main": "index",
-  "description": "Join continuous CJK lines in markdown."
+  "description": "Join continuous CJK lines in markdown.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lotabout/hexo-filter-fix-cjk-spacing.git"
+  },
+  "keywords": [
+    "hexo",
+    "filter",
+    "cjk",
+    "spacing"
+  ],
+  "author": {
+    "name": "Mark Wallace",
+    "email": "lotabout@gmail.com",
+    "url": "http://lotabout.github.io"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://raw.github.com/lotabout/hexo-filter-fix-cjk-spacing/master/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/lotabout/hexo-filter-fix-cjk-spacing/issues"
+  }
 }
