@@ -1,11 +1,11 @@
 {
   "name": "hexo-filter-fix-cjk-spacing",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Join continuous CJK lines in markdown.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lotabout/hexo-filter-fix-cjk-spacing.git"
+    "url": "git+https://github.com/lotabout/hexo-filter-fix-cjk-spacing.git"
   },
   "keywords": [
     "hexo",
@@ -13,16 +13,21 @@
     "cjk",
     "spacing"
   ],
-  "author": {
-    "name": "Mark Wallace",
-    "email": "lotabout@gmail.com",
-    "url": "http://lotabout.github.io"
-  },
-  "license": {
-    "type": "MIT",
-    "url": "https://raw.github.com/lotabout/hexo-filter-fix-cjk-spacing/master/LICENSE"
-  },
+  "author": "Mark Wallace <lotabout@gmail.com> (http://lotabout.github.io)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lotabout/hexo-filter-fix-cjk-spacing/issues"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3"
+  },
+  "homepage": "https://github.com/lotabout/hexo-filter-fix-cjk-spacing#readme",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "mocha"
   }
 }
