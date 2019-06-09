@@ -1,6 +1,6 @@
 {
   "name": "hexo-filter-fix-cjk-spacing",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Join continuous CJK lines in markdown.",
   "main": "index.js",
   "repository": {
