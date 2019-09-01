@@ -91,7 +91,7 @@ Only the following situation are dealt with:
 
 ```
 ...<chinese character>[should contains no spaces]
-[should contains no spaces]<chinese character>
+[zero or more spaces|tab]<chinese character>
 
 .....中文结尾
 中文顶格...
@@ -101,4 +101,5 @@ Only the following situation are dealt with:
 //           `- note no space here
 ```
 
-Note that the content in code block will not be changed.
+Note that the content in fenced code block will *not* be changed. But indented
+code blocks *will* be changed
